@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support</title>
+    <link rel="stylesheet" href="contact-thule.css">
+</head>
+<body>
+    <form class="form--flex" action="" required>
+        <h3>Contact Customer Support</h3>
+        <p>Tell us how we can help</p>
+        <p class="form__p--error form__p--error-hidden">A few things need your attention</p>
+        <ul>
+            <li class="form__li relative">
+                <label class="form__label select--mask" for="contact-reason">
+                   <span class="form__span--error" >*</span>
+                   Category/contact reason
+                </label>
+                <select class="form__select" name="contact-reason" id="contact-reason" required>
+                    <option value="">Select an Option</option>
+                    <option value="bike-racks">Bike Racks</option>
+                    <option value="roof-racks">Roof Racks</option>
+                    <option value="boxes-baskets">Boxes & Baskets</option>
+                    <option value="winter-water">Winter & water Sport Rack</option>
+                    <option value="rooftop-tent">Rooftop tents</option>
+                    <option value="stroller">Strollers & Child Carriers</option>
+                    <option value="bike-trailers-seats">Bike Trailers & Bike Seats</option>
+                </select>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+            <li class="form__li relative">
+                <label class="form__label select--mask" for="country">
+                    <span class="form__span--error">*</span>
+                    Country
+                </label>
+                <select class="form__select" name="country" id="country" required>
+                    <option value="">Select an Option</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Aland-Islands">Aland Islands</option>
+                </select>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+            <li class="form__li">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" name="name" id="name">
+            </li>
+            <li class="form__li">
+                <label class="form__label" for="phone">Phone</label>
+                <input class="form__input" type="text" name="phone" id="phone">
+            </li>
+            <li class="form__li">
+                <label class="form__label" for="email">
+                    <span class="form__span--error">*</span>
+                    Email
+                </label>
+                <input class="form__input" type="email" required>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+            <li class="form__li">
+                <label class="form__label" for="subject">
+                    <span class="form__span--error">*</span>
+                    Subject
+                </label>
+                <input class="form__input" type="text" name="subject" id="subject" required>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+            <li class="form__li">
+                <label class="form__label" for="description">
+                    <span class="form__span--error">*</span>
+                    Description
+                </label>
+                <textarea class="form__input form__textarea" name="description" id="description" cols="30" rows="4" required></textarea>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+            <li class="form__li relative">
+                <label class="form__label select--mask" for="data-storage">
+                    <span class="form__span--error">*</span>
+                    Data Storage
+                </label>
+                <select class="form__select" name="data-storage" id="data-storage" required>
+                    <option value="">Select an Option</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <span class="form__span--error form__span--error-hidden">Complete this field</span>
+            </li>
+        </ul>
+        <button class="button button--margin" type="submit">Submit</button>
+        <p>By selecting Yes for Data Storage, I accept that Thule Group processes my personal data to facilitate warranty claims and sending product safety notices. For more information about your rights, see our <a href="">Privacy Policy</a> *</p>
+    </form>
+    <section></section>
+</body>
+</html>
